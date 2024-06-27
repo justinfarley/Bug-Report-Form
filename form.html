@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact RLS</title>
+        <link rel="stylesheet" type="text/css" href="./form.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+        <link rel="manifest" href="./images/site.webmanifest">
+    </head>
+    <body>
+        <section id="contact-me-form">
+            <form action="https://formspree.io/f/mblrrebk" method="POST">
+                <h1>Bug Report Form</h1>
+                <div class="inputField">
+                    <label>Who is reporting:</label>
+                    <input type="text" name="name" id="name" placeholder="Who is reporting this?" required minlength="2"> 
+                </div>
+
+                <div class="inputField">
+                    <label>Which game are you reporting for?:</label>
+                    <select required name="game" id="game">
+                        <option value="Playtime at Paxton's">Playtime at Paxton's</option>
+                        <option value="The Acorn Bounty">The Acorn Bounty</option>
+                        <option value="My House is Haunted">MHIH</option>
+                        <option value="Other">Other: I will specify in the issue</option>
+                    </select>
+                </div>
+
+                <div class="inputField">
+                    <label>Describe the Issue:</label>
+                    <textarea name="Issue" id="issue" rows="50" cols="50" placeholder="This is broken I can't take damage" required minlength="1" maxlength="1000"></textarea>
+                </div>
+                
+                <div class="inputField">
+                    <label>Describe how the issue can be replicated:</label>
+                    <textarea name="Steps to Replicate" id="replicate" rows="8" cols="50" placeholder=" 1. Do this&#10 2. Do that&#10 3. Turn around 3 times..." required minlength="1" maxlength="1000"></textarea>
+                </div>
+
+                <div class="inputField">
+                    <label>Any additional comments or suggestions:</label>
+                    <textarea name="Additional Comments" id="comments" rows="8" cols="50" placeholder="Additional Comments:" minlength="1"></textarea>
+                </div>
+
+                <input id="submit" type="submit" value="Send">
+            </form>
+        </section>
+        <footer>
+            <h6> © Created by Justin Farley </h6>
+        </footer>
+    </body>
+
+</html>
