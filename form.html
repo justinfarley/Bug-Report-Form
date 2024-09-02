@@ -54,15 +54,15 @@
                     <label>Who is reporting:</label>
                     <input type="text" name="name" id="name" placeholder="Who is reporting this?" required minlength="2"> 
                 </div>
-
                 <div class="inputField">
                     <label>Which game are you reporting for:</label>
-                    <select required name="game" id="game">
-                        <option value="Super Paxton Palace">Super Paxton Palace</option>
-                        <option value="The Acorn Bounty">The Acorn Bounty</option>
-                        <option value="My House is Haunted">MHIH</option>
-                        <option value="Other">Other: I will specify in the issue</option>
-                    </select>
+                    <input list="games" name="game" id="game" placeholder="Start typing the game name..." required>
+                    <datalist id="games">
+                        <option value="Super Paxton Palace">
+                        <option value="The Acorn Bounty">
+                        <option value="My House is Haunted">
+                        <option value="Other: I will specify in the issue">
+                    </datalist>
                 </div>
 
                 <div class="inputField">
